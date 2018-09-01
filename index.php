@@ -15,6 +15,10 @@ function str_endswith($s, $test) {
     return substr_compare($s, $test, -$testlen) === 0;
 }
 
+function testing() {
+   echo "Function Callback";
+}
+
 function header_nocache() {
     header('Expires: Fri, 01 Jan 1980 00:00:00 GMT');
     header('Pragma: no-cache');
